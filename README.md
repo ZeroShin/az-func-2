@@ -1,23 +1,37 @@
-# OCA ê³¼ì œ Azure Extension
+# OCA °úÁ¦ Azure Extension
 
-í•œ ê²ƒë“¤ì„ ì •ë¦¬í•´ì„œ ì˜¬ë¦´ ìˆ˜ ìžˆë„ë¡ í•œë‹¤.
+°úÁ¦½Ã ¹ß»ýÇÑ ¹®Á¦¿Í ÇØ°á ¹æ¹ýÀ» Á¦½ÃÇÑ´Ù.
 
-## ë¬¸ì œ 1 : ì„¤ì¹˜ëœ ë‹·ë„· íŒ¨í‚¤ì§€ ë²„ì „ì´ ë§žì§€ ì•Šì•„ ë‹¤ì‹œ ì„¤ì¹˜ë¥¼ í•´ì£¼ì–´ì•¼ í•œë‹¤.
-í•´ê²° ë˜ì§€ ì•Šìœ¼ë©´ func start ì‹œì— ë¬´í•œë¡œë”©ì´ ê±¸ë ¤ íŽ˜ì´ì§€ê°€ ë‚˜ì˜¤ì§€ ì•ŠëŠ”ë‹¤.
+## ¹®Á¦ 1 : ¼³Ä¡µÈ ´å³Ý ÆÐÅ°Áö ¹öÀüÀÌ ¸ÂÁö ¾Ê¾Æ ´Ù½Ã ¼³Ä¡¸¦ ÇØÁÖ¾î¾ß ÇÑ´Ù.
+ÇØ°á µÇÁö ¾ÊÀ¸¸é func start ½Ã¿¡ ¹«ÇÑ·ÎµùÀÌ °É·Á ÆäÀÌÁö°¡ ³ª¿ÀÁö ¾Ê´Â´Ù.
 
-### í•´ê²° 1 : 
+### ÇØ°á 1 : 
 dotnet add package Microsoft.Azure.Functions.Worker<br>
 dotnet add package Microsoft.Azure.Functions.Worker.Sdk
 
-## ë¬¸ì œ 2 : ì‹¤ìŠµì‹œ ë”°ë¼í–ˆë˜ íŒ¨í‚¤ì§€ë¥¼ ëª¨ë‘ ê¹”ë©´ ì•ˆëœë‹¤.
-ëª¨ë‘ ê¹”ë©´ ë¹Œë“œê°€ ë˜ì§€ ì•ŠëŠ”ë‹¤.
+## ¹®Á¦ 2 : ½Ç½À½Ã µû¶óÇß´ø ÆÐÅ°Áö¸¦ ¸ðµÎ ±ò¸é ¾ÈµÈ´Ù.
+¸ðµÎ ±ò¸é ºôµå°¡ µÇÁö ¾Ê´Â´Ù.
 
-### í•´ê²° 2 : 
-dotnet add package Microsoft.NET.Sdk.Functions ë¥¼ í–ˆë‹¤ë©´<br>
-dotnet remove package Microsoft.NET.Sdk.Functionsë¡œ íŒ¨í‚¤ì§€ ì‚­ì œ
+### ÇØ°á 2 : 
+dotnet add package Microsoft.NET.Sdk.Functions ¸¦ Çß´Ù¸é<br>
+dotnet remove package Microsoft.NET.Sdk.Functions·Î ÆÐÅ°Áö »èÁ¦
 
-## ë¬¸ì œ 3 : local.settings.jsonì´ ì—†ìœ¼ë©´ í”„ë¡œì íŠ¸ë¥¼ ë°›ì€ ì‚¬ëžŒì´ ì‹¤í–‰í•˜ê¸° ì–´ë µë‹¤.
-íŒŒì¼ì´ ì—†ìœ¼ë©´ ë©˜í† ê°€ í”„ë¡œì íŠ¸ë¥¼ ë°›ì•„ì„œ ë¹Œë“œ í•´ë³¼ ìˆ˜ ì—†ë‹¤.
+## ¹®Á¦ 3 : local.settings.jsonÀÌ ¾øÀ¸¸é ÇÁ·ÎÁ§Æ®¸¦ ¹ÞÀº »ç¶÷ÀÌ ½ÇÇàÇÏ±â ¾î·Æ´Ù.
+ÆÄÀÏÀÌ ¾øÀ¸¸é ¸àÅä°¡ ÇÁ·ÎÁ§Æ®¸¦ ¹Þ¾Æ¼­ ºôµå ÇØº¼ ¼ö ¾ø´Ù.
 
-### í•´ê²° 3 : 
-.gitignore íŒŒì¼ì— local.settings.json ì•žì— #ì„ ë¶™ì—¬ì„œ ì£¼ì„ì²˜ë¦¬ í•œë‹¤.
+### ÇØ°á 3 : 
+.gitignore ÆÄÀÏ¿¡ local.settings.json ¾Õ¿¡ #À» ºÙ¿©¼­ ÁÖ¼®Ã³¸® ÇÑ´Ù.
+
+## ¹®Á¦ 4 : ÅÍ¹Ì³Î¿¡¼­ ÇÑ±ÛÀÌ ±úÁö´Â Çö»óÀÌ ¹ß»ýÇÑ´Ù.
+ÇÁ·ÎÁ§Æ®¿¡ ÁöÀåÀ» ÁÖÁö ¾ÊÁö¸¸ ±Û¾¾°¡ ±úÁø´Ù.
+
+### ÇØ°á 4 : 
+°Ë»ö - ±¹°¡ ¶Ç´Â Áö¿ª º¯°æ - ¿ìÃø "Ãß°¡ ³¯Â¥, ½Ã°£ ¹× ±¹°¡º° ¼³Á¤" - ±¹°¡ ¶Ç´Â Áö¿ª - °ü¸®ÀÚ ¿É¼Ç - ½Ã½ºÅÛ ·ÎÄ¶ º¯°æ - Beta: ¼¼°è ¾ð¾î Áö¿øÀ» À§ÇØ Unicode UTF-8 »ç¿ë - È®ÀÎ<br>
+ÀÌÈÄ ÀçºÎÆÃ ÇÏ¸é ±Û¾¾°¡ Á¤»óÀûÀ¸·Î Ãâ·Â µÈ´Ù.
+
+## ¹®Á¦ 5 : VsCode ÅÍ¹Ì³Î¿¡¼­ func init°¡ µÇÁö ¾Ê´Â´Ù.
+¾î¶² ÀÌÀ¯ÀÎÁö ÅÍ¹Ì³Î¿¡¼­ initÀÌ µÇÁö ¾Ê´Â ÀÌ½´°¡ ÀÖ´Ù.
+
+### ÇØ°á 5 : 
+ÇÁ·ÎÁ§Æ® Æú´õ¿¡ °¡¼­ °æ·Î¸¦ ¾µ ¼ö ÀÖ´Â °÷¿¡ cmd.À» Ä¡¸é ÇØ´ç Æú´õÀÇ ¸í·É ÇÁ·ÒÇÁÆ® Ã¢À» ¿­ ¼ö ÀÖ´Ù.<br>
+¸í·É ÇÁ·ÒÇÁÆ® Ã¢¿¡¼­´Â func initÀÌ Á¤»óÀûÀ¸·Î ½ÇÇà µÈ´Ù.
